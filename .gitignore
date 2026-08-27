@@ -1,0 +1,21 @@
+# The CRM itself. Contact names, employers, deal values, meeting summaries - yours, local.
+db/*.duckdb
+db/*.duckdb.wal
+data/exports/
+data/imports/
+companies.csv
+
+# secrets
+.env
+.streamlit/secrets.toml
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Belt and braces: the database and its exports, wherever they are written.
+*.duckdb
+*.duckdb.wal
+*.parquet
+!examples/*.csv
